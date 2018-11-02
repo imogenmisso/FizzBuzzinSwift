@@ -1,6 +1,6 @@
 //
-//  FizzBuzzinSwiftTests.swift
-//  FizzBuzzinSwiftTests
+//  SwizzBuzzTests.swift
+//  SwizzbuzzTests
 //
 //  Created by Imogen Misso on 02/11/2018.
 //  Copyright © 2018 Imogen Misso. All rights reserved.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import FizzBuzzinSwift
 
-class FizzBuzzinSwiftTests: XCTestCase {
+class SwizzBuzzTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -21,16 +21,55 @@ class FizzBuzzinSwiftTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    let swizzbuzz = Swizzbuzz()
+    
+    func testIsDivisibleByThree() {
+        let result = swizzbuzz.isDivisibleByThree(number: 3)
+        XCTAssertEqual(result, true)
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testIsNotDivisibleByThree() {
+        let result = swizzbuzz.isDivisibleByThree(number: 1)
+        XCTAssertEqual(result, false)
     }
     
+    func testIsDivisibleByFive() {
+        let result = swizzbuzz.isDivisibleByFive(number: 5)
+        XCTAssertEqual(result, true)
+    }
+    
+    func testIsNotDivisibleByFive() {
+        let result = swizzbuzz.isDivisibleByFive(number: 1)
+        XCTAssertEqual(result, false)
+    }
+    
+    func testIsDivisibleByFifteen() {
+        let result = swizzbuzz.isDivisibleByFifteen(number: 15)
+        XCTAssertEqual(result, true)
+    }
+    
+    func testIsNotDivisibleByFifteen() {
+        let result = swizzbuzz.isDivisibleByFifteen(number: 1)
+        XCTAssertEqual(result, false)
+    }
+    
+    func testSayFizz() {
+        let result = swizzbuzz.check(number: 3)
+        XCTAssertEqual(result, "fizz")
+    }
+    
+    func testSayBuzz() {
+        let result = swizzbuzz.check(number: 5)
+        XCTAssertEqual(result, "buzz")
+    }
+    
+    func testSayFizzBuzz() {
+        let result = swizzbuzz.check(number: 15)
+        XCTAssertEqual(result, "fizzbuzz")
+    }
+    
+    func testSayNumber() {
+        let result = swizzbuzz.check(number: 1)
+        XCTAssertEqual(result, "1")
+    }
 }

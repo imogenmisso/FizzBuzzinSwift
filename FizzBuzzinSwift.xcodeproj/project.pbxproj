@@ -15,6 +15,7 @@
 		E8A1060F218C72E1006B083F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8A1060E218C72E1006B083F /* Assets.xcassets */; };
 		E8A10612218C72E1006B083F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8A10610218C72E1006B083F /* LaunchScreen.storyboard */; };
 		E8A1061D218C72E1006B083F /* FizzBuzzinSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A1061C218C72E1006B083F /* FizzBuzzinSwiftTests.swift */; };
+		E8A10628218C730D006B083F /* FizzBuzzinSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A10627218C730D006B083F /* FizzBuzzinSwift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		E8A10618218C72E1006B083F /* FizzBuzzinSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FizzBuzzinSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8A1061C218C72E1006B083F /* FizzBuzzinSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzinSwiftTests.swift; sourceTree = "<group>"; };
 		E8A1061E218C72E1006B083F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8A10627218C730D006B083F /* FizzBuzzinSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzinSwift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				E8A1060E218C72E1006B083F /* Assets.xcassets */,
 				E8A10610218C72E1006B083F /* LaunchScreen.storyboard */,
 				E8A10613218C72E1006B083F /* Info.plist */,
+				E8A10627218C730D006B083F /* FizzBuzzinSwift.swift */,
 			);
 			path = FizzBuzzinSwift;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8A10628218C730D006B083F /* FizzBuzzinSwift.swift in Sources */,
 				E8A1060A218C72E0006B083F /* Document.swift in Sources */,
 				E8A10608218C72E0006B083F /* DocumentViewController.swift in Sources */,
 				E8A10606218C72E0006B083F /* DocumentBrowserViewController.swift in Sources */,
